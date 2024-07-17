@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- <title>Lost Scripts Project</title> -->
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/favicon.png">
+	<!--<link href="../../ls/docs/assets/ls_favicon.svg" rel="icon" type="image/svg+xml">-->
+	<!--<link rel="preload" href="index.css" as="style">--> <!-- user-transparent fallback .css loading system -->
+	<!--<link rel="preload" href="../index.css" as="style">-->
+	<!--<link rel="preload" href="../../index.css" as="style">-->
+	<!--<link rel="preload" href="../../ls/docs/index.css" as="style">-->
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="../index.css">
+	<link rel="stylesheet" href="../../index.css">
+	<link rel="stylesheet" href="../../ls/docs/index.css">
+	<link rel="preload" href="index.js" as="script"> <!-- user-transparent fallback .js loading system -->
+	<link rel="preload" href="../index.js" as="script">
+	<link rel="preload" href="../../index.js" as="script">
+	<link rel="preload" href="../../ls/docs/index.js" as="script">
+	<!--<script src="../../ls/docs/index.js"></script>-->
+	<!-- 
+	<style type='text/css'>
+		h1, h2, h3, h4, h5, h6 {
+			font-family: "Josefin Sans", sans-serif;
+			color: yellow;
+			border-bottom: 1px solid rgb(200, 200, 200);
+		}
+		hr {
+			color: yellow;
+		}
+		img {
+			/*mix-blend-mode: multiply;*/
+			/*filter: invert(0.4) sepia(1) hue-rotate(120deg) saturate(1000%) drop-shadow(6px 4px 8px black);*/
+			filter: invert(1) sepia(1) hue-rotate(160deg) invert(1) hue-rotate(60deg) brightness(10000%) saturate(100%) drop-shadow(6px 4px 8px black);
+		}
+	</style>
+	 -->
+</head>
+<body bgcolor="#272822" text="#ffffff" link="#3794FF" alink="#FFFF00" vlink="#9437FF" style="background-color:#272822; margin: 20px; font-family: 'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Segoe UI Emoji'; box-sizing: border-box; max-width: 980px; min-width: 360px; width: 80%; margin-left: auto; margin-right: auto;">
+<!--<div align="center">
+ 	<a href="https://moho.lostmarble.com/" title="Go to Moho website"><img src="https://img.shields.io/badge/For-Moho_Pro_14.1+-orange" alt="Moho version"></a>
+	<a href="https://github.com/lost-scripts/ls7_script/releases/latest" title="Go to download page"><img src="https://img.shields.io/github/v/release/lost-scripts/ls7_script?logo=github" alt="GitHub version"></a>
+	<img src="https://img.shields.io/github/downloads/lost-scripts/ls7_script/total.svg?color=yellow" alt="GitHub downloads">
+</div>-->
+
+<h1 align="center">Lost Scripts Project</h1>
+<table width="100%" align="center" border="2" style="border-collapse: collapse;">
+<thead>
+<tr>
+	<th nowrap width="124px" valign="middle" style="text-align: center;">
+	      <sub><sup>Lost Scripts</sup></sub>
+	</th>
+	<th nowrap width="900px" align="right" valign="middle" style="text-align: right;">
+		<a href="https://moho.lostmarble.com/" title="Go to Moho website"><img height="18px" src="https://img.shields.io/badge/For-Moho_Pro_14.2+-orange" alt="Moho version"></a>
+		<a href="https://github.com/lost-scripts/ls7_script/releases/latest" title="Go to download page"><img height="18px" src="https://img.shields.io/github/v/release/lost-scripts/ls7_script?logo=github" alt="GitHub version"></a>
+		<a inert href="#!" style="cursor: default;"><img height="18px" src="https://img.shields.io/github/downloads/lost-scripts/ls7_script/total.svg?color=yellow" alt="GitHub downloads"></a>
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr width="1024px">
+	<td valign="middle">
+		<a inert href="#!" style="cursor: default;"><img align="center" src="ScriptResources/ls/docs/index_logo_2.png" onerror="this.onerror=null; this.src=this.getAttribute('src').split('/').pop();" alt="Script icon" width="100%" style="vertical-align: middle;"></a>
+	</td>
+	<td valign="top">
+		<details name="description" width="100%" align="left" style="cursor:pointer;">
+			<summary title="Click for more info, media, etc.">The Lost Scripts Project is responsible for providing all the necessary shared/common files and helpers that <a href="https://moho.lostmarble.com/" title="Visit Moho's webpage">Moho®</a> needs for the well functioning of Lost Scripts™. Click to expand <b>details</b>...</summary>
+			<br>
+			<p><b>Overview/Contents:</b></p>
+			<dl>
+				<dd>
+					<blockquote style="border-left: 6px solid yellow; font-size: 16px; margin: 0.5em 0px; padding: 0.5em 16px; background-color: #363D45";>
+					<details open><summary title="Contents (click expands, hovering descrives)" style="cursor: pointer">📂 ls </summary><blockquote>
+					<details><summary style="cursor: pointer">📁 Menu </summary><blockquote>
+					<details><summary style="cursor: pointer">📁 - Lost Scripts </summary><blockquote>
+					<code title="Main menu entry for visiting the Lost Scripts webpage"> 📄 ls_webpage.lua</code>
+					</blockquote></details>
+					<code title="Just a menu entries separatorr"> 📄 ls_separator.lua</code>
+					</blockquote></details>
+					<details><summary style="cursor: pointer">📁 Modules </summary><blockquote>
+					<pre>
+					<code title="Expands Moho's widgets and GUI capabilities"> 📄 ls_gui.lua</code>
+					<code title="Provides the necessary modules for Lost Scripts"> 📄 ls_modules.lua</code>
+					</pre>
+					</blockquote></details>
+					<details><summary style="cursor: pointer">📁 ScriptResources </summary><blockquote>
+					<details><summary title="Common/Shared Lost Scripts™ resources container" style="cursor: pointer">📁 ls </summary><blockquote>
+					<code title="The Lost Scripts™ logo"> 🖼 logo.png</code>
+					</blockquote></details>
+					</blockquote></details>
+					<details><summary style="cursor: pointer">📁 Tool </summary><blockquote>
+					<code title='Defines how Lost Scripts™ appear in "Tools" palette by default'> 📄 _tool_list_ls.txt</code>
+					</blockquote></details>
+					<details><summary style="cursor: pointer">📁 Utility </summary><blockquote>
+					<code title="Provides general utilities and functions"> 📄 ls_utilities.lua</code>
+					</blockquote></details>
+					</blockquote></details>
+					</blockquote>
+				</dd>
+			</dl>
+			For (even) more info, <a href="https://lost-scripts.github.io/ls" title="Visit the script's webpage">visit project's webpage...</a>
+		</details>
+	</td>
+</tr>
+</tbody>
+</table>
+<!--
+<table width="100%" align="center" border="2" style="border-collapse: collapse;">
+	<tr>
+		<th nowrap width="124px" align="center" valign="middle" rowspan="2" style="text-align: center;">
+			<sub><sup>Shapes Window</sup></sub>
+		</th>
+		<th nowrap width="900px" align="right" valign="tmiddle" style="text-align: right;">
+			<a href="https://moho.lostmarble.com/" title="Go to Moho website"><img height="18px" src="https://img.shields.io/badge/For-Moho_Pro_14.2+-orange" alt="Moho version"></a>
+			<a href="https://github.com/lost-scripts/ls7_script/releases/latest" title="Go to download page"><img height="18px" src="https://img.shields.io/github/v/release/lost-scripts/ls7_script?logo=github" alt="GitHub version"></a>
+			<a href="#!" style="cursor: default;"><img height="18px" src="https://img.shields.io/github/downloads/lost-scripts/ls7_script/total.svg?color=yellow" alt="GitHub downloads"></a>
+		</th>
+	</tr>
+	<tr>
+		<td valign="top" rowspan="2">A persistent shape palette plus many other helpers for better management of Moho® vectors in general and <i>Liquid Shapes</i> in particular.</td>
+	</tr>
+	<tr>
+		<td align="center" valign="middle" rowspan="2">
+			<a inert href="#!" style="cursor: default;"><img src="ScriptResources/ls_shapes_window/docs/index_icon.svg" alt="Script icon" align="center" width="100%" style="vertical-align: middle;"></a>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top">
+			<details width="100%" align="left" style="cursor:pointer;">
+				<summary align="center" title="Click for more info, media, etc."><sub><sup><b>More details</b>...&ensp;&ensp;</sub></sup></summary>
+				<br>
+				<p><b>Main Features:</b></p>
+				<dl>
+					<dd>
+						<ul>
+							<li>Visualize layers' shape relationships at a glance.</li>
+							<li>Take the most of Liquid Shapes thanks to improved management.</li>
+							<li>Rename, reorder, hide/show, etc. one or several shapes with ease.</li>
+							<li>New ways of shape creation independently of selected tool.</li>
+							<li>Shape selection helpers: Select all, Inverse, Similar, Identical...</li>
+							<li>Improved style management, picking and modification.</li>
+							<li>Many interactive "live" Swatches (and you can easily make your own).</li>
+							<li>Recoloring features plus other helpers.</li>
+							<li>Several window display modes to better suit your needs.</li>
+						</ul>
+					</dd>
+				</dl>
+				For (even) more info, <a href="https://lost-scripts.github.io/ls_shapes_window" title="Visit the script's webpage">visit script's webpage...</a>
+			</details>
+		</td>
+	</tr>
+</table>
+-->
+<!--
+<h1><img src="https://github.com/lost-scripts/ls_shapes_window/raw/main/ScriptResources/ls_shapes_window/icon.svgz" alt="Script icon" style="width: 60px; vertical-align: middle;"><sup>&nbsp;Shapes Window&nbsp;</sup></h1>
+A persistent shape palette plus many other helpers for better management of Moho® vectors in general and <i>Liquid Shapes</i> in particular.
+-->
+<h2 align="center" title="Click the arrow to expand/collapse the tree">📦 Contents</h2>
+<table width="100%" align="center" border="2" style="border-collapse: collapse;">
+<tr>
+	<td width="1024px" align="left" style="width: 100%; text-align: left;">
+		<blockquote style="border-left: 6px solid yellow; font-size: 16px; margin: 0; padding: 0.5em 16px; background-color: #363D45";>
+			<details><summary title="Contents (click expands, hovering descrives)" style="cursor: pointer">📂 ls </summary>
+				<blockquote>
+					<details><summary style="cursor: pointer">📁 Menu </summary>
+						<blockquote>
+							<details><summary style="cursor: pointer">📁 - Lost Scripts </summary>
+								<blockquote>
+									<code title="Main menu entry for visiting the Lost Scripts webpage"> 📄 ls_webpage.lua</code>
+								</blockquote>
+							</details>
+							<code title="Just a menu entries separatorr"> 📄 ls_separator.lua</code>
+						</blockquote>
+					</details>
+					<details><summary style="cursor: pointer">📁 Modules </summary>
+						<blockquote>
+							<pre>
+							<code title="Expands Moho's widgets and GUI capabilities"> 📄 ls_gui.lua</code>
+							<code title="Provides the necessary modules for Lost Scripts"> 📄 ls_modules.lua</code>
+							</pre>
+						</blockquote>
+					</details>
+					<details><summary style="cursor: pointer">📁 ScriptResources </summary>
+						<blockquote>
+							<details><summary title="Common/Shared Lost Scripts™ resources container" style="cursor: pointer">📁 ls </summary>
+							<blockquote>
+								<code title="The Lost Scripts™ logo"> 🖼 logo.png</code>
+							</blockquote>
+							</details>
+						</blockquote>
+					</details>
+					<details><summary style="cursor: pointer">📁 Tool </summary>
+						<blockquote>
+							<code title='Defines how Lost Scripts™ appear in "Tools" palette by default'> 📄 _tool_list_ls.txt</code>
+						</blockquote>
+					</details>
+					<details><summary style="cursor: pointer">📁 Utility </summary>
+						<blockquote>
+							<code title="Provides general utilities and functions"> 📄 ls_utilities.lua</code>
+						</blockquote>
+					</details>
+				</blockquote>
+			</details>
+		</blockquote>
+	</td>
+</tr>
+</table>
+
+<h2 align="center" title="Click the arrow to expand/collapse image gallery">✨ Featured Scripts</h2>
+<table width="100%" align="center" border="2" style="border-collapse: collapse;">
+<thead>
+<tr>
+	<th nowrap width="124px" valign="middle" style="text-align: center;">
+	      <sub><sup>Shapes Window</sup></sub>
+	</th>
+	<th nowrap width="900px" align="right" valign="middle" style="text-align: right;">
+		<a href="https://moho.lostmarble.com/" title="Go to Moho website"><img height="18px" src="https://img.shields.io/badge/For-Moho_Pro_14.2+-orange" alt="Moho version"></a>
+		<a href="https://github.com/lost-scripts/ls7_script/releases/latest" title="Go to download page"><img height="18px" src="https://img.shields.io/github/v/release/lost-scripts/ls7_script?logo=github" alt="GitHub version"></a>
+		<a href="#!" style="cursor: default;"><img height="18px" src="https://img.shields.io/github/downloads/lost-scripts/ls7_script/total.svg?color=yellow" alt="GitHub downloads"></a>
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr width="1024px">
+	<td valign="middle">
+		<a inert href="#!" style="cursor: default;"><img align="center" src="ScriptResources/ls/docs/index_icon_shapes_window.png" onerror="this.onerror=null; this.src=this.getAttribute('src').split('/').pop();" alt="Script icon" width="100%" style="vertical-align: middle;"></a>
+	</td>
+	<td valign="top">
+		<details name="description" width="100%" align="left" style="cursor:pointer;">
+			<summary title="Click for more info, media, etc.">A persistent shape palette plus many other helpers for better management of Moho® vectors in general and <i>Liquid Shapes</i> in particular. Click to expand <b>details</b>...</summary>
+			<br>
+			<p><b>Main Features:</b></p>
+			<dl>
+				<dd>
+					<ul>
+						<li>Visualize layers' shape relationships at a glance.</li>
+						<li>Take the most of Liquid Shapes thanks to improved management.</li>
+						<li>Rename, reorder, hide/show, etc. one or several shapes with ease.</li>
+						<li>New ways of shape creation independently of selected tool.</li>
+						<li>Shape selection helpers: Select all, Inverse, Similar, Identical...</li>
+						<li>Improved style management, picking and modification.</li>
+						<li>Many interactive "live" Swatches (and you can easily make your own).</li>
+						<li>Recoloring features plus other helpers.</li>
+						<li>Several window display modes to better suit your needs.</li>
+					</ul>
+				</dd>
+			</dl>
+			For (even) more info, <a href="https://lost-scripts.github.io/ls_shapes_window" title="Visit the script's webpage">visit script's webpage...</a>
+		</details>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<table width="100%" align="center" border="2" style="border-collapse: collapse;">
+<thead>
+<tr>
+	<th nowrap width="124px" valign="middle" style="text-align: center;">
+	      <sub><sup>Script Placeholder</sup></sub>
+	</th>
+	<th nowrap width="900px" align="right" valign="middle" style="text-align: right;">
+		<a href="https://moho.lostmarble.com/" title="Go to Moho website"><img height="18px" src="https://img.shields.io/badge/For-Moho_Pro_14.2+-orange" alt="Moho version"></a>
+		<a href="https://github.com/lost-scripts/ls7_script/releases/latest" title="Go to download page"><img height="18px" src="https://img.shields.io/github/v/release/lost-scripts/ls7_script?logo=github" alt="GitHub version"></a>
+		<a inert href="#!" style="cursor: default;"><img height="18px" src="https://img.shields.io/github/downloads/lost-scripts/ls7_script/total.svg?color=yellow" alt="GitHub downloads"></a>
+	</th>
+</tr>
+</thead>
+<tbody>
+<tr width="1024px">
+	<td valign="middle">
+		<a inert href="#!" style="cursor: default;"><img align="center" src="ScriptResources/ls/docs/index_icon_unknown.png" onerror="this.onerror=null; this.src=this.getAttribute('src').split('/').pop();" alt="Script icon" width="100%" style="vertical-align: middle;"></a>
+	</td>
+	<td valign="top">
+		<details name="description" width="100%" align="left" style="cursor:pointer;">
+			<summary title="Click for more info, media, etc.">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Click to expand <b>details</b>...</summary>
+			<br>
+			<p><b>Main Features:</b></p>
+			<dl>
+				<dd>
+					<ul>
+						<li>Awesome feature 1.</li>
+						<li>Awesome feature 2.</li>
+						<li>Awesome feature 3</li>
+						<li>...</li>
+					</ul>
+				</dd>
+			</dl>
+			For (even) more info, <a href="https://lost-scripts.github.io/ls_shapes_window" title="Visit the script's webpage">visit script's webpage...</a>
+		</details>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<h2 align="center">🔗 Links of Interest</h2>
+<table width="100%" align="center" border="2" style="border-collapse: collapse;">
+<thead>
+<tr>
+	<th width="512px" align="center" style="text-align: center;">
+		👉 <a href="https://lost-scripts.github.io/ls" title="Go to the project's webpage">Go to the Lost Scripts™ website...</a>
+	</th>
+	<th inert width="512px" align="center" style="text-align: center;">
+		👉 <a inert href="#!" title="Go to the Lost Marble Forum topic">Go to the Lost Marble Forum topic...</a>
+ 	</th>
+</tr>
+</tr>
+</thead>
+</table>
+
+<h2 align="center">⚙ Installation (Two Ways)</h2>
+<!--<p>There are actually two ways for installing custom scripts in Moho® and they apply the same to this kind of shared resources container, so (as usually) you can choose the one that better suit your needs...</p>-->
+<table width="100%" align="center" border="2" style="border-collapse: collapse;">
+<thead>
+<tr>
+	<th width="512px" style="text-align: center">MANUAL</th>
+	<th width="512px" style="text-align: center">AUTOMATIC</th>
+</tr>
+</thead>
+<tbody>
+<tr width="1024px" style="vertical-align: top">
+	<td valign="top">
+		<ol>
+		<li>Unzip the downloaded file.</li>
+		<li>You'll get one or more of the following folders: <code>Menu | ScriptResources | Tool | Utility</code></li>
+		<li>Drag & Drop (or Copy & Paste) all of them into the <b><i>Scripts</i></b> folder of your <a href="https://manual.lostmarble.com/app/page/1IOuEOfMa7kUwqYPi2ABDhwoWE_KXB1OBCC5ib__iyIE?p=1UxA8Gi5DttJku9AmFlSpO0gJw4U9flX3" title="View in Moho users manual"><i><b>Custom Content Folder</b></i></a> (overwrite if prompted).</li>
+		<li>Restart Moho® or press "Alt + Shift + Ctrl + L" to <i>Reload Tools And Brushes</i> and that should be all.</li>
+		<br>
+		</ol>
+	</td>
+	<td valign="top">
+		<ol>
+		<li>Unzip the downloaded file.</li>
+		<li>From Moho's main menus, go to "Scripts -> Install Script..." and a window with some info will appear.</li>
+		<li>Press "Select A Script Folder" button, browse to the just uzipped folder (e.g. <code>ls_shapes_window</code>) and select it.</li>
+		<li>That should be all. You can read chapter <a href="https://manual.lostmarble.com/app/page/1IOuEOfMa7kUwqYPi2ABDhwoWE_KXB1OBCC5ib__iyIE?p=1UxA8Gi5DttJku9AmFlSpO0gJw4U9flX3" title="View in Moho users manual"><i>23.17 Install Script...</i></a> of Moho® user's manual for further details.</li>
+		<br>
+		</ol>
+	</td>
+</tr>
+<tr>
+	<td width="512px" colspan="2" valign="bottom">
+		<blockquote style="border-left: none;"> <sup>⚠ <b>WARNING</b>: Please, make sure you have uninstalled every Lost Script on your system before removing any of these shared resources or they may start throwing errors or stop working. For uninstalling a script, just remove any file and folder matching its name and restart Moho® or <i>Reload Tools And Brushes</i> if necessary.</sup></blockquote>
+	</th>
+</tr>
+</tbody>
+</table>
+
+<h2 align="center">🤝 Collab & Support</h2>
+<p>Suggestions and bugs can be reported in the <a href="https://github.com/lost-scripts/ls/issues" title="Go to &quot;Issues&quot; section"><i>Issues</i></a> section (or in the corresponding topic, if any, in <a href="https://www.lostmarble.com/forum/viewforum.php?f=12)" title="Go to Lost Marble Forum's &quot;Scripting&quot; section"><i>Scripting</i></a> section of the <a href="https://www.lostmarble.com/forum" title="Go to the &quot;Lost Marble Forum&quot;"><i>Lost Marble Forum</i></a>).</p>
+
+<!--
+## Contributing
+Contributions to this script are welcome. Please fork the repository and submit a pull request with your changes.
+-->
+<hr>
+<p align="center">Copyright © 2024 · Rai López · <a href="https://github.com/lost-scripts/.github/blob/main/LICENSE.md" title="See LICENSE...">All Rights Reserved</a></p>
+<hr>
+
+<div hidden>
+
+[//]: # (<script src="index.js"></script>)
+[//]: # (<script src="../index.js"></script>)
+[//]: # (<script src="../../index.js"></script>)
+[//]: # (<script src="../../ls/docs/index.js"></script>)
+
+</div>
+</body>
+</html>

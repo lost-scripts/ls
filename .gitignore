@@ -1,0 +1,65 @@
+# GENERAL #
+###########
+
+# Ignore everything in root
+/*
+
+# Allow specified directories and their subdirectories
+!/.github/
+!/Menu/
+!/Tool/
+!/ScriptResources/
+!/Utility/
+!/Modules/
+
+# Ignore everything within allowed directories
+/.github/*
+/Menu/*
+/Menu/- Lost Scripts/*
+/Tool/*
+/ScriptResources/*
+/Utility/*
+/Modules/*
+
+# Unignore specific files after unignoring their directories
+!.gitattributes
+!.gitignore
+!LICENSE.md
+!README.md
+#!/.github/docs/
+#!/.github/README.md
+!/docs
+!/Menu/ls_separator.lua
+!/Menu/- Lost Scripts/
+!/Menu/- Lost Scripts/ls_webpage.lua
+!/ScriptResources/ls/
+!/Tool/_tool_list_ls.txt
+!/Utility/ls_utilities.lua
+!/Modules/ls_modules.lua
+
+
+# Ignore folders starting with...
+#/ls_*/
+# Ignore files starting with...
+#ls_*
+# Ignore all starting with...
+#ls_
+
+# PATHS #
+#########
+
+
+
+# FOLDERS #
+###########
+
+#Modules/
+
+# FILE TYPES #
+##############
+
+
+
+# FILES #
+#########
+
